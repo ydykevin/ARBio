@@ -72,6 +72,8 @@ public class PulseEngineDriver: PulseDataSource
     // Called at the first frame when the component is enabled
     void Start()
     {
+        Debug.Log("in driver");
+
         // Ensure we only read data if the application is playing
         // and we have a state file to initialize the engine with
         if (!Application.isPlaying || initialStateFile == null)
