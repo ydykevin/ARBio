@@ -62,7 +62,7 @@ public class SWP_HeartRateMonitor : MonoBehaviour
 		BlipOffset = new Vector3 (transform.position.x - (BlipMonitorWidth / 2), transform.position.y, transform.position.z);
 		DisplayXEnd = BlipOffset.x + BlipMonitorWidth;
 		
-		if (NewClone.transform.position.x > DisplayXEnd)
+		if (NewClone.transform.position.x > DisplayXEnd )
 		{			
 			if (NewClone != null)
 			{

@@ -19,4 +19,9 @@ public class HeartRateManager : MonoBehaviour
     {
         hr.text = this.GetComponent<SWP_HeartRateMonitor>().BeatsPerMinute + "";
     }
+
+    public void changeSize()
+    {
+        Debug.Log("size");
+    }
 }
