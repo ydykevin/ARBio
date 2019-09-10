@@ -5,7 +5,8 @@ using UnityEngine;
 public class ButtonManager : MonoBehaviour
 {
 
-    public GameObject panel;
+    public GameObject HPanel;
+    public GameObject SPanel;
     private float scale;
 
     // Start is called before the first frame update
@@ -22,13 +23,17 @@ public class ButtonManager : MonoBehaviour
 
     public void small()
     {
-        scale = panel.transform.localScale.x;
-        panel.transform.localScale = new Vector3(scale/1.2f, scale / 1.2f, scale / 1.2f);
+        scale = HPanel.transform.localScale.x;
+        HPanel.transform.localScale = new Vector3(scale/1.2f, scale / 1.2f, scale / 1.2f);
+        scale = SPanel.transform.localScale.x;
+        SPanel.transform.localScale = new Vector3(scale / 1.2f, scale / 1.2f, scale / 1.2f);
     }
 
     public void big()
     {
-        scale = panel.transform.localScale.x;
-        panel.transform.localScale = new Vector3(scale * 1.2f, scale * 1.2f, scale * 1.2f);
+        scale = HPanel.transform.localScale.x;
+        HPanel.transform.localScale = new Vector3(scale * 1.2f, scale * 1.2f, scale * 1.2f);
+        scale = SPanel.transform.localScale.x;
+        SPanel.transform.localScale = new Vector3(scale * 1.2f, scale * 1.2f, scale * 1.2f);
     }
 }
